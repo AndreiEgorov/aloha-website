@@ -25,6 +25,14 @@ time, mark, audio, video {
     
 
 }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+}
 
 @font-face {
     font-family: 'Raleway';
@@ -130,23 +138,36 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/* ====================Typography================ */
+html{
+    font-size: 14px;
+}
+
 body {
-    line-height: 1.5;
+    line-height: 2rem;
     font-family: "Raleway";
     font-weight: 300;
     font-style: normal;
+    color:#2d2d2d;
 }
 .italic{
     font-family: "Playfair Display";
     font-style: italic;
+    font-size: 2rem;
 }
 .bold{
     font-family: "Playfair Display";
     font-weight:bold;
+    font-size: 2rem;
 
 }
 .white{
     color: white;
+}
+
+.nav{
+    color:#e2574c;
 }
 
 header,
@@ -156,90 +177,356 @@ font-family: "Playfair Display"
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.collection{
-    flex: 20px;
-}
-
-.container{
-    margin: 0 auto;
-    max-width: 1240px;
-    background: aquamarine;
-    text-align: center;
-   
-    
-
-}
 
 
-ul.nav{
-    list-style: none;
-}
-li.nav{
-    display: inline-block;
-}
-
-
-nav{display:inline-block;
-    text-align: center;
-}
-
-.logo{
-    display: inline-block;
-    width: 254px;
-    height: 120px;   
-    
-}
-.basket{
-    display: inline-block;
-     
-    
-}
-
-.banner{
-    background: url(images/banner-girl.png) no-repeat bottom center, url(images/flower-bkgd.jpg) repeat-x;
-    background-size:200px, cover;
-    width: 100%;
-    height: 500px;
-    background-position-y: 107px,0;
-    /* bottom: 1px; */
-}
 
 .fa{
     display:block;
-    color: black;
+    color: white;
     text-decoration: none;
 
 }
 
 footer{
+    background-color:#242424;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
 }
 
 .contact{
     display: flex;
     justify-content: flex-start;
-    text-align: left;
+    text-align: center;
+    /* margin: 2rem auto; */
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 3rem 3rem 2rem 3rem;
+}
+.address{
+    color:#969696;
+   
 }
 .social{
-    text-align: right;
+    text-align: center;
     display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 0 0 4rem 0;
+
+    
+}
+.right-ul{
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+}
+
+
+/* =================Blocks================ */
+
+
+
+
+
+
+
+header{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.logo{
+    order: 1;
+    margin: 10px auto 0px 10px;
+    width: 50%;
+
+}
+
+.basket{
+    order: 2;
+    margin: 10px 10px 0px auto;
+
+}
+
+.basket-image{
+    max-width: auto;
+    max-height: 85%;
+}
+.logo-image{
+    width: 240px;
+    height: 95px; 
+    max-width: 100%; 
+}
+
+.menu{
+    order: 3;
+    flex-basis: 100%;
+    align-self: center;
+    border-top: 3px solid #d7d7d7;
+    margin: 0 2%;
+    position: relative;
+    bottom: 5px;
+}
+.nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.25rem 1rem;
+}
+
+li.nav{
+    display: inline-block;
+}
+.banner{
+    display: flex;
+    background: url(images/banner-girl.png) no-repeat center, url(images/flower-bkgd.jpg) repeat-x center;
+    background-size:41%, cover;
+    width: 100%;
+    height: 50vh;
+    background-position-y: 62px, 0;
+    
+}
+.banner-text{
+    display:flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection{
+    max-width: 100%;
+}
+
+.collection p{
+    font-variant: small-caps;
+    font-family: "Raleway";
+    font-size: 1rem;
+    font-weight: 400;
+   
+}
+.collection h1{
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px 55px;
+    line-height: 2rem;
     
 }
 
+.container{
+    margin: 0 auto;
+    max-width: 1240px;
+    text-align: center;
+}
+.wave-block{
+    margin: 0 0 -7px 0;
+} 
 
+.container .text{
+    margin: 1.5rem 1.5rem;
+    padding: 1.5rem 0;
+}
+.title-text{
+    padding: 1rem;
+}
+.sign-up-title{
+    padding: 20px 0 0 0;
+}
+.container .wave p{
+    color: white;
+    padding: 5px;
+}
+
+
+
+.categories{
+    color: white;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-content: stretch;
+}
+
+.men{
+    background-image: url(./images/mens-category.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vw;
+    margin-bottom: 1%;
+ } 
+.men li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.trends{
+    background-image: url(./images/trends-category.jpg);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    flex-basis: 49vw;
+    height: 49vw;
+    margin: 1% 1% 1% 0%;
+}
+
+.trends li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.glasses{
+    background-image: url(./images/glasses-category.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-basis: 49vw;
+    height: 49vw;
+    margin: 1% 0% 1% 1%;
+
+}
+.glasses li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sale{
+    background-image: url(./images/sale-category.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-basis: 49vw;
+    height: 49vw;
+    margin: 1% 1% 1% 0%;
+}
+.sale li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bags{
+    background-image: url(./images/bags-category.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-basis: 49vw;
+    width: 49vw;
+    margin: 1% 0% 1% 1%;
+}
+.bags li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.women{
+    background-image: url(./images/womens-category.jpg);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    flex-basis: 100vw;
+    height: 50vw;
+    margin-top: 7px;
+
+}
+.women li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checked-dress{
+    background-image: url(./images/checked-stretch-dress.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+}
+
+/* ===================  Sign up form section ====================== */
+
+.wave{
+    background-image:url(./images/wave-bkgd.jpg);
+    background-position: bottom;
+    background-size: 175vh;
+    bottom: 20px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+}
+ 
+
+.placeholder{
+    line-height: 1.5;
+    font-family: "Raleway";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 0.80rem 2rem;
+    border-color: white;
+    width: 85vw;
+    margin: 6vw 0px auto 0px;
+    border-radius: 25px;
+
+}
+button{
+    border-color: #e2574c;
+    background-color: #e2574c;
+    border-radius: 20px;
+    font-family: "Raleway";
+    font-size: 1rem;
+    color: white;
+    padding: 0.75rem 1rem;
+    position: absolute;
+    top: 227px;
+    right: 33px;
+}
+    
+
+
+  
+    
+
+
+
+/* 
 @media screen and (min-width: 480px){
     .header{
         display:flex;
@@ -249,6 +536,5 @@ footer{
         display: flex;
         order: 1;
         justify-content: flex-start;
-    }
+    } */
 
-}

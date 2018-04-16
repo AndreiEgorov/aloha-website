@@ -12,14 +12,14 @@
 </head>
 <body>
 
-    <header>
+    <header class="container">
 
-        <div>
-            <img class="logo" src="images/aloha-logo.svg" alt="Aloha Logo" title="Aloha">
+        <div class="logo">
+            <img class="logo-image" src="images/aloha-logo.svg" alt="Aloha Logo" title="Aloha">
         </div>
 
-        <div>
-            <div class="container">
+        <div class="menu">
+            <div>
                 <nav>
                     <ul class="nav">
                         <li class="nav">ABOUT</li> 
@@ -32,15 +32,15 @@
         </div>
 
         <div class="basket">
-             <img src="images/cart-icon.svg" alt="Shopping Basket">
+             <img class="basket-image" src="images/cart-icon.svg" alt="Shopping Basket">
         </div>
 
     </header>
 <!-- Put a girl in shorts as a background image in the following div -->
     <section class="main">
         <div class="banner">
-            <div class="container">
-                <div class="collection">
+            <div class="container banner-text">
+                <div class="collection white">
                     <p>NEW COLLECTION</p>
                     <h1>Spring/Summer 2016</h1>
                 </div>
@@ -50,27 +50,49 @@
 
     <div>
          <div class="container">
-            <p> <span class="italic">Hand-Crafted </span><span class="bold">Styles</span></p>
-            <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our <br>
-            current selection of products or sign-up for updates below.</p>
-          </div>  
+            <div class="text">
+                <p class="title-text"> <span class="italic">Hand-Crafted </span><span class="bold">Styles</span></p>
+                <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
+                current selection of products or sign-up for updates below.</p>
+            </div>
+         </div>  
     </div>
 
     <!-- Below a flexbox will need to be used. -->
-    <ul>
-        <li>MEN'</li>
-        <li>TRENDS</li>
-        <li>GLASSES</li>
-        <li>SALE</li>
-        <li>BAGS</li>
-        <li>WOMEN'S</li>
-    </ul>
-
+    <div>   
+        <ul class="categories">
+            <div class="men">
+                 <li>MEN'S</li>
+            </div>
+            <div class="trends">
+                <li>TRENDS</li>
+            </div>
+            <div class="glasses">
+                <li>GLASSES</li>
+            </div>
+            <div class="sale">
+                <li>SALE</li>
+            </div>
+            <div class="bags">
+                <li>BAGS</li>
+            </div>
+            <div class="women">
+               <li>WOMEN'S</li>
+            </div>
+        </ul>
+    </div>
     <!-- Java Script Plugin will be used below -->
-    <div>
+
+
+    <div class="products">
        <div class="container">
-            <p><span class="italic">Most-Loved</span><span class="bold"> Products</span></p>
+            <p class="text"><span class="italic">Most-Loved</span><span class="bold"> Products</span></p>
         </div>  
+
+        <div class="checked-dress">
+           
+
+        </div>
 
         <!-- place for JS -->
     </div>
@@ -79,16 +101,17 @@
     
     <div>
 
-        <div class="container">
-            <p><span class="italic white">Sign-up for</span> <span class="bold white">Updates</span></p>
-            <p>Stay updated on our latest product releases, be first to find out
-            <br> upcoming sales, and get free style tips from our blog. Unsubscribe at any time
-            </p>
-
-            <form action="#">
-                <input type="email" placeholder="Your Email">
-                <button type="submit" name="Subscribe">Subscribe</button>
-            </form>
+        <div class="container wave-block">
+            <div class="wave">
+               <section class="sign-up-title"> <p class="text"><span class="italic white">Sign-up for</span> <span class="bold white">Updates</span></p> </section>
+                <p>Stay updated on our latest product releases, be first to find out
+                upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+            
+                <form action="#">
+                    <input class="placeholder" type="email" placeholder="Your Email">
+                    <button type="submit" name="Subscribe">Subscribe</button>
+                </form>
+            </div>
         </div>    
 
     </div>
@@ -98,11 +121,15 @@
             <p>
                     &copy; 2016 Aloha Apparel Co.
                   <br>Powered by HTML and CSS.
+                  <br> 
                   <br>
-                      604-604-6040. <span>info@alohaapparel.com</span> <br>
-        
-                1490 W Broadway <br>
-                Vancouver, BC, Canada
+                      604-604-6040. <span>info@alohaapparel.com</span> 
+                  <br>
+                  <br>
+              
+                <span class="address">1490 W Broadway <br>
+                Vancouver, BC, Canada</span>
+               
             </p>
         
         </div>
