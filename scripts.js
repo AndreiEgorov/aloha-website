@@ -3,12 +3,30 @@ console.log("this works");
 
 //prompt("Hello");
 
-newFunction();
+
+//     var mood = prompt("How are you"), {
+//         prompt = ("How are you?");
+//         console.log("I am " + mood + " too!");     
+// }
+var greeting = hi;
+
+function hi(){
+    var mood = prompt("How are you?");
+    // prompt("How are you?")
+    alert ("I am " + mood + " too!");
+
 }
 
-function newFunction() {
-    var mood = prompt("How are you"), { prompt = ("How are you?") };
-    console.log("I am " + mood + " too!");
+function tonight(){
+   var action = prompt("what are you doing tonight?")
+    alert (action + " must be fun!")
 }
-newFunction();
 
+function response(){
+    if (hi === "good"){
+        tonight();
+    }
+    else ("Have a good day!");
+}
+hi();
+response();
