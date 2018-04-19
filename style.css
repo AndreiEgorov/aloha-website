@@ -145,6 +145,7 @@ html{
 }
 
 body {
+    min-width: 350px;
     line-height: 2rem;
     font-family: "Raleway";
     font-weight: 300;
@@ -261,25 +262,26 @@ header{
 
 .logo{
     order: 1;
-    margin: 10px auto 0px 10px;
-    width: 50%;
+    margin: 3% auto 0px 3%;
+    width: 47%;
 
 }
 
 .basket{
     order: 2;
-    margin: 2% 2% 0% auto;
+    margin: 3% 2% -1% auto;
 
 }
 
 .basket-image{
+    height: 65px;
     max-width: auto;
-    max-height: 85%;
+    
 }
 .logo-image{
-    width: 240px;
-    height: 95px; 
-    max-width: 100%; 
+    height: 65px; 
+    width: auto;
+    display: flex; 
 }
 
 .menu{
@@ -287,7 +289,7 @@ header{
     flex-basis: 100%;
     align-self: center;
     border-top: 3px solid #d7d7d7;
-    margin: 0 2%;
+    margin: 2% 2%;
     position: relative;
     bottom: 5px;
 }
@@ -295,7 +297,7 @@ header{
     text-align: center;
     display: flex;
     justify-content: space-around;
-    margin: 0.25rem 1rem;
+    margin: 0.2rem 2% 0rem 2%;
 }
 
 li.nav{
@@ -303,11 +305,14 @@ li.nav{
 }
 .banner{
     display: flex;
-    background: url(images/banner-girl.png) no-repeat center, url(images/flower-bkgd.jpg) repeat-x center;
-    background-size:41%, cover;
+    background:  linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
+                url(images/banner-girl.png) no-repeat center, 
+                url(images/flower-bkgd.jpg) repeat-x center;
+               
+    background-size:cover, 38%, cover;
     width: 100%;
     height: 50vh;
-    background-position-y: 62px, 0;
+    background-position-y: 0, 53px, 0;
     
 }
 .banner-text{
