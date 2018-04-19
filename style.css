@@ -368,6 +368,7 @@ li.nav{
 
 
 
+
 .categories{
     color: white;
     font-family: "Raleway";
@@ -377,6 +378,7 @@ li.nav{
     flex-wrap: wrap;
     align-content: center;
     align-content: stretch;
+   
 }
 
 .men{
@@ -384,7 +386,7 @@ li.nav{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 100vw;
+    flex-basis: 100%;
     height: 50vw;
     margin-bottom: 1%;
  } 
@@ -401,9 +403,11 @@ li.nav{
     background-position: center;
     background-size:100%;
     background-repeat: no-repeat;
-    flex-basis: 49vw;
+    flex-basis: 50%;
     height: 49vw;
-    margin: 1% 1% 1% 0%;
+    border-width: 0.25rem 0.25rem 0.25rem 0rem;
+    border-style: solid;
+    border-color: white;
 }
 
 .trends li{
@@ -419,9 +423,11 @@ li.nav{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    flex-basis: 49vw;
+    flex-basis: 50%;
     height: 49vw;
-    margin: 1% 0% 1% 1%;
+    border-width: 0.25rem 0 0.25rem 0.25rem;
+    border-style: solid;
+    border-color: white;
 
 }
 .glasses li{
@@ -437,9 +443,11 @@ li.nav{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    flex-basis: 49vw;
+    flex-basis: 50%;
     height: 49vw;
-    margin: 1% 1% 1% 0%;
+    border-width: 0.25rem 0.25rem 0.25rem 0rem;
+    border-style: solid;
+    border-color: white;
 }
 .sale li{
     height: 100%;
@@ -454,9 +462,11 @@ li.nav{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    flex-basis: 49vw;
+    flex-basis: 50%;
     width: 49vw;
-    margin: 1% 0% 1% 1%;
+    border-width: 0.25rem 0 0.25rem 0.25rem;
+    border-style: solid;
+    border-color: white;
 }
 .bags li{
     height: 100%;
@@ -470,7 +480,7 @@ li.nav{
     background-position: center;
     background-size:100%;
     background-repeat: no-repeat;
-    flex-basis: 100vw;
+    flex-basis: 100%;
     height: 50vw;
     margin-top: 7px;
 
@@ -487,7 +497,7 @@ li.nav{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
 }
 
