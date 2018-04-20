@@ -305,7 +305,7 @@ li.nav{
 }
 .banner{
     display: flex;
-    background:  linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
+    background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
                 url(images/banner-girl.png) no-repeat center, 
                 url(images/flower-bkgd.jpg) repeat-x center;
                
@@ -382,7 +382,9 @@ li.nav{
 }
 
 .men{
-    background-image: url(./images/mens-category.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
+                      url(./images/mens-category.jpg);
+                      
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -399,7 +401,8 @@ li.nav{
 
 
 .trends{
-    background-image: url(./images/trends-category.jpg);
+    background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
+                        url(./images/trends-category.jpg);
     background-position: center;
     background-size:100%;
     background-repeat: no-repeat;
@@ -419,7 +422,8 @@ li.nav{
 
 
 .glasses{
-    background-image: url(./images/glasses-category.jpg);
+    background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
+                        url(./images/glasses-category.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -439,7 +443,8 @@ li.nav{
 
 
 .sale{
-    background-image: url(./images/sale-category.jpg);
+    background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
+                        url(./images/sale-category.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -458,7 +463,8 @@ li.nav{
 
 
 .bags{
-    background-image: url(./images/bags-category.jpg);
+    background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
+                        url(./images/bags-category.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -476,7 +482,8 @@ li.nav{
 }
 
 .women{
-    background-image: url(./images/womens-category.jpg);
+    background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
+                        url(./images/womens-category.jpg);
     background-position: center;
     background-size:100%;
     background-repeat: no-repeat;
@@ -492,24 +499,39 @@ li.nav{
     align-items: center;
 }
 
-.checked-dress{
-    background-image: url(./images/checked-stretch-dress.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
+.carousel{
+    min-width: 350px;
 }
+
+/*========================== CAROUCEL ======================*/
+
+
+
+
+
+
+
+
+
+                                                /* .checked-dress{
+                                                    background-image: url(./images/checked-stretch-dress.jpg);
+                                                    background-position: center;
+                                                    background-size: 100%;
+                                                    background-repeat: no-repeat;
+                                                    width: 100%;
+                                                    height: 50vh;
+                                                } */
 
 /* ===================  Sign up form section ====================== */
 
 .wave{
-    background-image:url(./images/wave-bkgd.jpg);
+    background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
+                        url(./images/wave-bkgd.jpg);
     background-position: bottom;
     background-size: 175vh;
     bottom: 20px;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     
 }
@@ -553,7 +575,7 @@ button{
     font-family: "Raleway";
     font-size: 1rem;
     color: white;
-    margin: 3px auto 0 -128px;
+    margin: 3px 4px 0 -128px;
     height: 3rem;
     padding: 0.5rem 1.5rem;
 }
