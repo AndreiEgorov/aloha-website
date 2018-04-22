@@ -142,6 +142,7 @@ footer, header, hgroup, menu, nav, section {
 /* ====================Typography================ */
 html{
     font-size: 14px;
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -169,6 +170,10 @@ body {
 
 .nav{
     color:#e2574c;
+}
+
+ul .nav:hover{
+    color:#b64036;
 }
 
 header,
@@ -199,6 +204,8 @@ footer{
     flex-direction: column;
     align-items: center;
     color: white;
+    margin:2rem auto 0 auto;
+    border-top: white solid 7px;
 
 }
 
@@ -232,6 +239,9 @@ footer{
     justify-content: space-evenly;
     width: 50%;
 }
+.fa:hover{
+    color: #b64036;
+}
 
 .media-name{
     display: none;
@@ -245,20 +255,45 @@ footer{
 
 
 
+*{
+    box-sizing: border-box;
+}
 
 header{
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: center;    
 
+}
+ 
+.menu .nav a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.ancor{
+    display:block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
 
 }
 
-*{
-    box-sizing: border-box;
+
+.fixing{
+    position: fixed;
+    min-width: 350px;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto 1px auto;
+    background-color: white;
+    z-index: 5
+
+  
 }
+
 
 .logo{
     order: 1;
@@ -269,7 +304,7 @@ header{
 
 .basket{
     order: 2;
-    margin: 3% 2% -1% auto;
+    margin: 3% 3% -1% auto;
 
 }
 
@@ -300,19 +335,29 @@ header{
     margin: 0.2rem 2% 0rem 2%;
 }
 
+
 li.nav{
     display: inline-block;
 }
+
+
+.filler{
+    background-color: white;
+    height:147px;
+}
+
+
 .banner{
     display: flex;
     background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
                 url(images/banner-girl.png) no-repeat center, 
                 url(images/flower-bkgd.jpg) repeat-x center;
                
-    background-size:cover, 38%, cover;
+    background-size:cover, 44%, cover;
     width: 100%;
-    height: 50vh;
+    height: 30rem;
     background-position-y: 0, 53px, 0;
+    margin-top: 147px;
     
 }
 .banner-text{
@@ -379,6 +424,10 @@ li.nav{
     align-content: center;
     align-content: stretch;
    
+}
+
+.hvr:hover{
+    color: rgba(216, 208, 90, 0.877);
 }
 
 .men{
@@ -502,27 +551,19 @@ li.nav{
 .carousel{
     min-width: 350px;
 }
+.add-to-cart{
+    background-color: black;
+        border-color: black;
+        border-radius: 25px;
+        font-family: "Raleway";
+        font-size: 0.8rem;
+        color: white;
+        margin: 5px auto 5px auto;
+        height: 2rem;
+        
+        
+}
 
-/*========================== CAROUCEL ======================*/
-
-
-
-
-
-
-
-
-
-                                                /* .checked-dress{
-                                                    background-image: url(./images/checked-stretch-dress.jpg);
-                                                    background-position: center;
-                                                    background-size: 100%;
-                                                    background-repeat: no-repeat;
-                                                    width: 100%;
-                                                    height: 50vh;
-                                                } */
-
-/* ===================  Sign up form section ====================== */
 
 .wave{
     background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
@@ -532,13 +573,15 @@ li.nav{
     bottom: 20px;
     background-repeat: no-repeat;
     width: 100%;
-    height: 40vh;
+    height: 25rem;
+    margin:3rem 0 auto 0;
     
 }
  
 .email-bar{
     display: flex;
     justify-content: center;
+    margin: 50px auto auto auto;
 }
 
 form{
@@ -579,25 +622,162 @@ button{
     height: 3rem;
     padding: 0.5rem 1.5rem;
 }
-   
+   /* ============================MEDIA QUERY 600px==================== */
 
+
+@media screen and (min-width: 600px){
     
-
-
-  
-    
-
-
-
-/* 
-@media screen and (min-width: 480px){
-    .header{
-        display:flex;
-        flex-wrap: wrap;
+    html{
+        font-size: 16px;
     }
-    .logo{
-        display: flex;
-        order: 1;
-        justify-content: flex-start;
-    } */
 
+    .fixing{
+        min-width:600px;
+        width: 1240px;   
+    }
+
+    .placeholder {
+        font-size: 1rem;
+    }
+
+    .fixing{  
+        min-width: 600px;
+        width: 100%;
+        flex-wrap: nowrap;
+        align-content: space-around;   
+    }
+
+    .logo{
+        order: 1;
+        margin: 3% auto 10px 3%;
+   
+    }
+    
+    .basket{
+        order: 3;
+            margin: 3% 3% -1% 97px; 
+    }
+    
+    .menu{
+        order: 2;
+        flex-basis: 220%;
+        border-top: none;
+        margin: 2% 2%;
+       
+    }
+    .nav{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        margin: 0.2rem 2% 0rem 2%;
+    }
+
+    .banner{
+        margin-top: 100px;
+    }
+
+
+    /* ================= MAIN FLEXBOX ==================== */
+.men{
+    flex-basis: 50%;
+    height: 25vw;
+    border-width: 0 4px 4px 0;
+    border-color: white;
+    border-style: solid;
+    margin:initial;
+ } 
+
+.trends{
+    flex-basis: 25%;
+    height: 25vw; 
+    background-size: cover;
+    border-width: 0 4px 4px 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.glasses{
+  
+    flex-basis: 25%;
+    height: 25vw;
+    border-width: 0 0 4px 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.sale{
+   
+    flex-basis: 25%;
+    height: 25vw;
+    background-size: cover;
+    border-width: 4px 4px 0 0;
+    border-color: white;
+    border-style: solid;
+
+}
+
+.bags{
+  
+    flex-basis: 25%;
+    width: 25vw;
+    background-size: cover;
+    border-width: 4px 4px 0 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.women{
+    flex-basis: 50%;
+    height: 25vw;
+    margin: 0;
+    border-width: 4px 0 0 4px;
+    border-color: white;
+    border-style: solid;
+}
+/* ====================================================== */
+
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact{
+    text-align: left;
+
+}
+.fa{
+    display:initial;
+}
+.right-ul{
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.media-name{
+    display:initial;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.social{
+    text-align: right;
+    justify-content: flex-end;
+    margin: 0 3rem 0 auto;
+    width: 50%;   
+}
+
+
+.ancor{
+    top: -105px;
+}
+@media screen and (min-width: 1240px) {
+
+
+
+
+
+
+
+    
+
+}

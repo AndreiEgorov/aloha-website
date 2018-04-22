@@ -15,30 +15,33 @@
 <body>
 
     <header class="container">
-
-        <div class="logo">
-            <img class="logo-image" src="images/aloha-logo.svg" alt="Aloha Logo" title="Aloha">
-        </div>
-
-        <div class="menu">
-            <div>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav">ABOUT</li> 
-                        <li class="nav">SHOP</li>
-                        <li class="nav">FEATURED</li>
-                        <li class="nav">UPDATES</li>
-                    </ul>
-                </nav>
+        <div class="fixing">
+            <div class="logo">
+                <img class="logo-image" src="images/aloha-logo.svg" alt="Aloha Logo" title="Aloha">
+            </div>
+        
+            <div class="menu">
+                <div>
+                    <nav>
+                        <ul class="nav">
+                                 <li class="nav">  <a href="#about"> ABOUT </a></li> 
+                                <li class="nav"> <a href="#shop"> SHOP </a> </li> 
+                                <li class="nav"><a href="#featured"> FEATURED </a> </li>
+                                 <li class="nav"> <a href="#updates"> UPDATES </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    
+            <div class="basket">
+                <img class="basket-image" src="images/cart-icon.svg" alt="Shopping Basket">
             </div>
         </div>
-
-        <div class="basket">
-             <img class="basket-image" src="images/cart-icon.svg" alt="Shopping Basket">
-        </div>
-
     </header>
-<!-- Put a girl in shorts as a background image in the following div -->
+
+
+
+
     <section class="main">
         <div class="banner">
             <div class="container banner-text">
@@ -52,6 +55,8 @@
 
     <div>
          <div class="container">
+             <div class="ancor" id="about"></div>
+
             <div class="text">
                 <p class="title-text"> <span class="italic">Hand-Crafted </span><span class="bold">Styles</span></p>
                 <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
@@ -60,25 +65,25 @@
          </div>  
     </div>
 
-    <!-- Below a flexbox will need to be used. -->
-    <div>   
+    <div class="ancor" id="shop"></div>
+   
         <ul class="categories">
-            <div class="men">
+            <div class="men hvr">
                  <li>MEN'S</li>
             </div>
-            <div class="trends">
+            <div class="trends hvr">
                 <li>TRENDS</li>
             </div>
-            <div class="glasses">
+            <div class="glasses hvr">
                 <li>GLASSES</li>
             </div>
-            <div class="sale">
+            <div class="sale hvr">
                 <li>SALE</li>
             </div>
-            <div class="bags">
+            <div class="bags hvr">
                 <li>BAGS</li>
             </div>
-            <div class="women">
+            <div class="women hvr">
                <li>WOMEN'S</li>
             </div>
         </ul>
@@ -88,6 +93,8 @@
 
     <div class="products">
        <div class="container">
+
+            <div class="ancor" id="featured"></div>
             <p class="text"><span class="italic">Most-Loved</span><span class="bold"> Products</span></p>
        
               <div class="carousel">
@@ -97,6 +104,7 @@
                     <p>Bags</p>
                     <h1>Checked Stretch Dress</h1>
                     <p>$ 129.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
 
                 <div>
@@ -104,6 +112,7 @@
                     <p>Dresses</p>
                     <h1>Blue Silk Dress </h1>
                     <p>$ 149.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
 
                 <div>
@@ -111,6 +120,7 @@
                     <p>Dresses</p>
                     <h1>Checked Stretched Dress</h1>
                     <p>$ 179.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
 
                 <div>
@@ -118,6 +128,7 @@
                     <p>Shirts</p>
                     <h1>Cotton Blue Shirt</h1>
                     <p>$ 89.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
 
                 <div>
@@ -125,6 +136,7 @@
                     <p>Shirts</p>
                     <h1>Cotton Yellow Shirt</h1>
                     <p>$ 99.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
                 
                 <div>
@@ -132,6 +144,7 @@
                     <p>Demin</p>
                     <h1>Demin Overall Shorts</h1>
                     <p>$ 49.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
 
                 <div>
@@ -139,6 +152,7 @@
                     <p>Dresses</p>
                     <h1>Pink Dotted Dress</h1>
                     <p>$ 219.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
 
                 <div>
@@ -146,6 +160,7 @@
                     <p>Dresses</p>
                     <h1>Stretch Knit Dress</h1>
                     <p>$ 159.00</p>
+                    <button class="add-to-cart"> Add to Cart</button>
                 </div>
 
              </div>
@@ -159,11 +174,12 @@
  
     
     <div>
-
+        
+            
         <div class="container wave-block">
             <div class="wave">
 
-               <section class="sign-up-title"> <p class="text"><span class="italic white">Sign-up for</span> <span class="bold white">Updates</span></p> </section>
+               <section class="sign-up-title" id="updates"> <p class="text"><span class="italic white">Sign-up for</span> <span class="bold white">Updates</span></p> </section>
                 <p>Stay updated on our latest product releases, be first to find out
                 upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
                 <div class="email-bar">
@@ -208,7 +224,8 @@
         
 
     </footer>
-  
+ 
+        
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
