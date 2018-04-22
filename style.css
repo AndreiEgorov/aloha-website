@@ -649,20 +649,20 @@ button{
 
     .logo{
         order: 1;
-        margin: 3% auto 10px 3%;
+        margin: 2% auto 10px 3%;
    
     }
     
     .basket{
         order: 3;
-            margin: 3% 3% -1% 97px; 
+            margin: 2% 3% -1% 97px; 
     }
     
     .menu{
         order: 2;
         flex-basis: 220%;
         border-top: none;
-        margin: 2% 2%;
+        margin: 1% 2% 0% 2%;
        
     }
     .nav{
@@ -772,12 +772,40 @@ footer{
 }
 @media screen and (min-width: 1240px) {
 
+.fixing{
+    width: 1240px;
+    margin: 0px;
+}
+.logo{
+    margin:1.5% auto 0% 1%;
+}
+.basket{
+    margin: 1.5% 1% 0% auto;
+}
+.menu{
+    padding: 0% 2% 0% 2%;
+    margin: 0% 2% 0% 2%;
+}
 
+.nav{
+    margin: 1% 2% 0% 2%;
+}
+.products{
+    margin:0px auto;
+}
+.wave-block{
+    margin:0px auto;
+}
 
+.menu-bar{
+    padding: 0 20%;
+}
+.basket-image{
+    margin: 0 0px 0px 110px;
+}
 
-
-
-
-    
+.container{
+    min-width: 1240px;
+}
 
 }
