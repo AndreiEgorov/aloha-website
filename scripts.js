@@ -54,7 +54,7 @@ $(document).ready(function (){
 
 
 
-$("#submit").on("click", function(event){  //for some reason .on"submit" did not function, so I used .on click
+$("#submit").on("click", function(event){  //for some reason .on"submit" did not function, so I used .on click to create an alert when submitting email
   event.preventDefault;
   if ($("input").val() ===""){
   alert("Please, enter a valid email address");
@@ -65,12 +65,15 @@ $("#submit").on("click", function(event){  //for some reason .on"submit" did not
 
 });
 
+
+
+//to make a number go up on a shopping basket every time the "add-to-cart" is clicked.
 var shoppingCount = 0;
 $(".add-to-cart").on("click", function(){
   
   shoppingCount++;
 
-  $(".shopping-count").css("visibility", "visible");
+  $(".shopping-count").css("visibility", "visible"); //to make a basket appear on the first click
   $(".shopping-count").html(shoppingCount);
 
 });

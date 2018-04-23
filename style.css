@@ -199,7 +199,6 @@ table {
 }
 
 
-
 .fa{
     display:block;
     color: white;
@@ -257,12 +256,9 @@ footer{
 }
 /* ====================================== */
 
+
+
 /* =================Blocks================ */
-
-
-
-
-
 
 *{
     box-sizing: border-box;
@@ -273,7 +269,6 @@ header{
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: center;    
-
 }
  
 .menu .nav a{
@@ -298,9 +293,7 @@ header{
     flex-wrap: wrap;
     margin: 0 auto 1px auto;
     background-color: white;
-    z-index: 5
-
-  
+    z-index: 5;
 }
 
 
@@ -346,9 +339,6 @@ header{
     background-color: #e2574c;
     visibility: hidden;
 }
-
-
-
 
 
 .menu{
@@ -442,9 +432,6 @@ li.nav{
     color: white;
     padding: 5px;
 }
-
-
-
 
 .categories{
     color: white;
@@ -667,150 +654,152 @@ button{
 
 @media screen and (min-width: 600px){
     
-    html{
-        font-size: 16px;
-    }
+        html{
+            font-size: 16px;
+        }
 
-    .fixing{
-        min-width:600px;
-        width: 1240px;   
-    }
+        .fixing{
+            min-width:600px;
+            width: 1240px;   
+        }
 
-    .placeholder {
-        font-size: 1rem;
-    }
+        .placeholder {
+            font-size: 1rem;
+        }
 
-    .fixing{  
-        min-width: 600px;
-        width: 100%;
-        flex-wrap: nowrap;
-        align-content: space-around;   
-    }
+        .fixing{  
+            min-width: 600px;
+            width: 100%;
+            flex-wrap: nowrap;
+            align-content: space-around;   
+        }
 
-    .logo{
-        order: 1;
-        margin: 2% auto 10px 3%;
-   
-    }
+        .logo{
+            order: 1;
+            margin: 2% auto 10px 3%;
     
-    .basket{
-        order: 3;
-            margin: -3% 3% -1% 97px;; 
-            
+        }
+        
+        .basket{
+            order: 3;
+                margin: -3% 3% -1% 97px;; 
+                
+        }
+        
+        .menu{
+            order: 2;
+            flex-basis: 220%;
+            border-top: none;
+            margin: 1% 2% 0% 2%;
+        
+        }
+        .nav{
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            margin: 0.2rem 2% 0rem 2%;
+        }
+
+        .banner{
+            margin-top: 100px;
+        }
+
+
+        /* ================= MAIN FLEXBOX ==================== */
+    .men{
+        flex-basis: 50%;
+        height: 25vw;
+        border-width: 0 4px 4px 0;
+        border-color: white;
+        border-style: solid;
+        margin:initial;
+    } 
+
+    .trends{
+        flex-basis: 25%;
+        height: 25vw; 
+        background-size: cover;
+        border-width: 0 4px 4px 4px;
+        border-color: white;
+        border-style: solid;
     }
+
+    .glasses{
     
-    .menu{
-        order: 2;
-        flex-basis: 220%;
-        border-top: none;
-        margin: 1% 2% 0% 2%;
-       
-    }
-    .nav{
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        margin: 0.2rem 2% 0rem 2%;
+        flex-basis: 25%;
+        height: 25vw;
+        border-width: 0 0 4px 4px;
+        border-color: white;
+        border-style: solid;
     }
 
-    .banner{
-        margin-top: 100px;
-    }
-
-
-    /* ================= MAIN FLEXBOX ==================== */
-.men{
-    flex-basis: 50%;
-    height: 25vw;
-    border-width: 0 4px 4px 0;
-    border-color: white;
-    border-style: solid;
-    margin:initial;
- } 
-
-.trends{
-    flex-basis: 25%;
-    height: 25vw; 
-    background-size: cover;
-    border-width: 0 4px 4px 4px;
-    border-color: white;
-    border-style: solid;
-}
-
-.glasses{
-  
-    flex-basis: 25%;
-    height: 25vw;
-    border-width: 0 0 4px 4px;
-    border-color: white;
-    border-style: solid;
-}
-
-.sale{
-   
-    flex-basis: 25%;
-    height: 25vw;
-    background-size: cover;
-    border-width: 4px 4px 0 0;
-    border-color: white;
-    border-style: solid;
-
-}
-
-.bags{
-  
-    flex-basis: 25%;
-    width: 25vw;
-    background-size: cover;
-    border-width: 4px 4px 0 4px;
-    border-color: white;
-    border-style: solid;
-}
-
-.women{
-    flex-basis: 50%;
-    height: 25vw;
-    margin: 0;
-    border-width: 4px 0 0 4px;
-    border-color: white;
-    border-style: solid;
-}
-/* ====================================================== */
-
-footer{
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.contact{
-    text-align: left;
-
-}
-.fa{
-    display:initial;
-}
-.right-ul{
-    flex-direction: column;
-    justify-content: flex-end;
+    .sale{
     
-}
-.media-name{
-    display:initial;
-    flex-direction:row;
-    flex-wrap:wrap;
+        flex-basis: 25%;
+        height: 25vw;
+        background-size: cover;
+        border-width: 4px 4px 0 0;
+        border-color: white;
+        border-style: solid;
+
+    }
+
+    .bags{
+    
+        flex-basis: 25%;
+        width: 25vw;
+        background-size: cover;
+        border-width: 4px 4px 0 4px;
+        border-color: white;
+        border-style: solid;
+    }
+
+    .women{
+        flex-basis: 50%;
+        height: 25vw;
+        margin: 0;
+        border-width: 4px 0 0 4px;
+        border-color: white;
+        border-style: solid;
+    }
+    /* ====================================================== */
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact{
+        text-align: left;
+
+    }
+    .fa{
+        display:initial;
+    }
+    .right-ul{
+        flex-direction: column;
+        justify-content: flex-end;
+        
+    }
+    .media-name{
+        display:initial;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .social{
+        text-align: right;
+        justify-content: flex-end;
+        margin: 0 3rem 0 auto;
+        width: 50%;   
+    }
+
+
+    .ancor{
+        top: -105px;
+    }
 }
 
-.social{
-    text-align: right;
-    justify-content: flex-end;
-    margin: 0 3rem 0 auto;
-    width: 50%;   
-}
-
-
-.ancor{
-    top: -105px;
-}
 
 @media screen and (min-width:800px){
     .basket{
@@ -828,52 +817,57 @@ footer{
 
 @media screen and (min-width: 1240px) {
 
-.fixing{
-    min-width: 1240px;
-    padding: 0% 21%;
-    margin: 0px;
-}
+    .fixing{
+        min-width: 1240px;
+        padding: 0% 21%;
+        margin: 0px;
+    }
 
 
-.logo{
-    margin:1.5% auto 0% 1%;
-}
-.basket{
-    margin: -1% 1% 1% auto;
-}
-.menu{
-    padding: 0% 2% 0% 2%;
-    margin: 0% 2% 0% 2%;
-}
+    .logo{
+        margin:1.5% auto 0% 1%;
+    }
 
-.nav{
-    margin: 1% 2% 0% 2%;
-}
-.products{
-    margin:0px auto;
-}
-.wave-block{
-    margin:0px auto;
-}
+    .basket{
+        margin: -1% 1% 1% auto;
+    }
 
-.menu-bar{
-    padding: 0 20%;
-}
-.basket-image{
-    margin: 0 0px 0px 110px;
-}
+    .menu{
+        padding: 0% 2% 0% 2%;
+        margin: 0% 2% 0% 2%;
+    }
 
-.container{
-    min-width: 100%;
-}
-.email-bar{
-    padding: 0px 20%;
-}
+    .nav{
+        margin: 1% 2% 0% 2%;
+    }
 
-.shopping-count{
-    top: 25px;
-    left: 155px;
-  
-}
+    .products{
+        margin:0px auto;
+    }
 
+    .wave-block{
+        margin:0px auto;
+    }
+
+    .menu-bar{
+        padding: 0 20%;
+    }
+
+    .basket-image{
+        margin: 0 0px 0px 110px;
+    }
+
+    .container{
+        min-width: 100%;
+    }
+
+    .email-bar{
+        padding: 0px 20%;
+    }
+
+    .shopping-count{
+        top: 25px;
+        left: 155px;
+    
+    }
 }
