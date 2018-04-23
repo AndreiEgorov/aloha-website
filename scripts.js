@@ -57,11 +57,25 @@ $(document).ready(function (){
 
 
 
+// $(".add-to-cart").on("click" , "button", function(){
+//     var i=0;
+//     $("this").return(i++);
+// } )
 
 
 
 
- 
+// $("this").on("click", function(){
+//     var count = 0;
+//     $(".shopping-count") = (count++)};;
+// );
+
+
+
+
+
+
+
 
 
 

@@ -175,6 +175,15 @@ body {
 ul .nav:hover{
     color:#b64036;
 }
+.apparel-font{
+    font-family:"Playfair Display";
+    color:#e2574c;
+    font-size: 1.5rem;
+}
+.apparel-type{
+    font-variant: all-small-caps;
+    font-size: 1rem;
+}
 
 header,
 footer{
@@ -304,7 +313,7 @@ header{
 
 .basket{
     order: 2;
-    margin: 3% 3% -1% auto;
+    margin: -2% 3% -1% auto;
 
 }
 
@@ -622,6 +631,19 @@ button{
     height: 3rem;
     padding: 0.5rem 1.5rem;
 }
+
+.shopping-count{
+    position: relative;
+    top: 15px;
+    left: 160px;
+    bottom: -4px;
+    width: 20px;
+    margin: 0px;
+    font-family: "Raleway";
+    background-color: #e2574c;
+
+}
+
    /* ============================MEDIA QUERY 600px==================== */
 
 
@@ -655,7 +677,7 @@ button{
     
     .basket{
         order: 3;
-            margin: 2% 3% -1% 97px; 
+            margin: -2% 3% -1% 97px; 
     }
     
     .menu{
@@ -773,14 +795,17 @@ footer{
 @media screen and (min-width: 1240px) {
 
 .fixing{
-    width: 1240px;
+    min-width: 1240px;
+    padding: 0% 21%;
     margin: 0px;
 }
+
+
 .logo{
     margin:1.5% auto 0% 1%;
 }
 .basket{
-    margin: 1.5% 1% 0% auto;
+    margin: -0.6% 1% 0% auto;
 }
 .menu{
     padding: 0% 2% 0% 2%;
@@ -805,7 +830,12 @@ footer{
 }
 
 .container{
-    min-width: 1240px;
+    min-width: 100%;
+}
+.email-bar{
+    padding: 0px 20%;
 }
 
-}
+
+
+
