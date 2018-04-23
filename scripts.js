@@ -54,29 +54,26 @@ $(document).ready(function (){
 
 
 
+$("#submit").on("click", function(event){  //for some reason .on"submit" did not function, so I used .on click
+  event.preventDefault;
+  if ($("input").val() ===""){
+  alert("Please, enter a valid email address");
+}
+  else {
+  alert("Thanks for subscribing!")
+  }
 
+});
 
+var shoppingCount = 0;
+$(".add-to-cart").on("click", function(){
+  
+  shoppingCount++;
 
-// $(".add-to-cart").on("click" , "button", function(){
-//     var i=0;
-//     $("this").return(i++);
-// } )
+  $(".shopping-count").css("visibility", "visible");
+  $(".shopping-count").html(shoppingCount);
 
-
-
-
-// $("this").on("click", function(){
-//     var count = 0;
-//     $(".shopping-count") = (count++)};;
-// );
-
-
-
-
-
-
-
-
+});
 
 
 
@@ -86,74 +83,3 @@ $(document).ready(function (){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $('a[href*="#"]')
-// .not('[href="#"]')
-// .not('[href="#0"]')
-// .click(function(event) {
-//     var headerNav=$(".head").height();
-//   // On-page links
-//   if (
-//     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-//     && 
-//     location.hostname == this.hostname
-//   ) {
-//     // Figure out element to scroll to
-//     var target = $(this.hash);
-//     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//     // Does a scroll target exist?
-//     if (target.length) {
-//       // Only prevent default if animation is actually gonna happen
-//       event.preventDefault();
-//       $('html, body').animate(
-          
-//         {
-//         scrollTop: target.offset().top - headerNav
-//          }, 
-//          1000, 
-//          function() {
-
-
-
-
-
-//         // Callback after animation
-//         // Must change focus!
-//         var $target = $(target);
-//         $target.focus();
-//         if ($target.is(":focus")) { // Checking if the target was focused
-//           return false;
-//         } else {
-//           $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-//           $target.focus(); // Set focus again
-//         };
-//       });
-//     }
-//   }
-// });
-   
