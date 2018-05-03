@@ -1,8 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,129 +21,113 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    
-
 }
-    blockquote, q {
-        quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content: '';
-        content: none;
+blockquote, q {
+    quotes: none;
 }
-
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
 @font-face {
     font-family: 'Raleway';
     src: url('./fonts/transform/Raleway-LightItalic.eot');
     src: url('./fonts/transform/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/Raleway-LightItalic.woff2') format('woff2'),
-        url('./fonts/transform/Raleway-LightItalic.woff') format('woff'),
-        url('./fonts/transform/Raleway-LightItalic.ttf') format('truetype'),
-        url('./fonts/transform/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    url('./fonts/transform/Raleway-LightItalic.woff2') format('woff2'),
+    url('./fonts/transform/Raleway-LightItalic.woff') format('woff'),
+    url('./fonts/transform/Raleway-LightItalic.ttf') format('truetype'),
+    url('./fonts/transform/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
     font-weight: 300;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Raleway';
     src: url('./fonts/transform/Raleway-MediumItalic.eot');
     src: url('./fonts/transform/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/Raleway-MediumItalic.woff2') format('woff2'),
-        url('./fonts/transform/Raleway-MediumItalic.woff') format('woff'),
-        url('./fonts/transform/Raleway-MediumItalic.ttf') format('truetype'),
-        url('./fonts/transform/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    url('./fonts/transform/Raleway-MediumItalic.woff2') format('woff2'),
+    url('./fonts/transform/Raleway-MediumItalic.woff') format('woff'),
+    url('./fonts/transform/Raleway-MediumItalic.ttf') format('truetype'),
+    url('./fonts/transform/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
     font-weight: 500;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Raleway';
     src: url('./fonts/transform/Raleway-Medium.eot');
     src: url('./fonts/transform/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/Raleway-Medium.woff2') format('woff2'),
-        url('./fonts/transform/Raleway-Medium.woff') format('woff'),
-        url('./fonts/transform/Raleway-Medium.ttf') format('truetype'),
-        url('./fonts/transform/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    url('./fonts/transform/Raleway-Medium.woff2') format('woff2'),
+    url('./fonts/transform/Raleway-Medium.woff') format('woff'),
+    url('./fonts/transform/Raleway-Medium.ttf') format('truetype'),
+    url('./fonts/transform/Raleway-Medium.svg#Raleway-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Raleway';
     src: url('./fonts/transform/Raleway-Light.eot');
     src: url('./fonts/transform/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/Raleway-Light.woff2') format('woff2'),
-        url('./fonts/transform/Raleway-Light.woff') format('woff'),
-        url('./fonts/transform/Raleway-Light.ttf') format('truetype'),
-        url('./fonts/transform/Raleway-Light.svg#Raleway-Light') format('svg');
+    url('./fonts/transform/Raleway-Light.woff2') format('woff2'),
+    url('./fonts/transform/Raleway-Light.woff') format('woff'),
+    url('./fonts/transform/Raleway-Light.ttf') format('truetype'),
+    url('./fonts/transform/Raleway-Light.svg#Raleway-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Playfair Display';
     src: url('./fonts/transform/PlayfairDisplay-Bold.eot');
     src: url('./fonts/transform/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/PlayfairDisplay-Bold.woff2') format('woff2'),
-        url('./fonts/transform/PlayfairDisplay-Bold.woff') format('woff'),
-        url('./fonts/transform/PlayfairDisplay-Bold.ttf') format('truetype'),
-        url('./fonts/transform/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    url('./fonts/transform/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('./fonts/transform/PlayfairDisplay-Bold.woff') format('woff'),
+    url('./fonts/transform/PlayfairDisplay-Bold.ttf') format('truetype'),
+    url('./fonts/transform/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Playfair Display';
     src: url('./fonts/transform/PlayfairDisplay-BoldItalic.eot');
     src: url('./fonts/transform/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
-        url('./fonts/transform/PlayfairDisplay-BoldItalic.woff') format('woff'),
-        url('./fonts/transform/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
-        url('./fonts/transform/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    url('./fonts/transform/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('./fonts/transform/PlayfairDisplay-BoldItalic.woff') format('woff'),
+    url('./fonts/transform/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+    url('./fonts/transform/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
     font-weight: bold;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Playfair Display';
     src: url('./fonts/transform/PlayfairDisplay-Italic.eot');
     src: url('./fonts/transform/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/PlayfairDisplay-Italic.woff2') format('woff2'),
-        url('./fonts/transform/PlayfairDisplay-Italic.woff') format('woff'),
-        url('./fonts/transform/PlayfairDisplay-Italic.ttf') format('truetype'),
-        url('./fonts/transform/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    url('./fonts/transform/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('./fonts/transform/PlayfairDisplay-Italic.woff') format('woff'),
+    url('./fonts/transform/PlayfairDisplay-Italic.ttf') format('truetype'),
+    url('./fonts/transform/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Playfair Display';
     src: url('./fonts/transform/PlayfairDisplay-Regular.eot');
     src: url('./fonts/transform/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/transform/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('./fonts/transform/PlayfairDisplay-Regular.woff') format('woff'),
-        url('./fonts/transform/PlayfairDisplay-Regular.ttf') format('truetype'),
-        url('./fonts/transform/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    url('./fonts/transform/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('./fonts/transform/PlayfairDisplay-Regular.woff') format('woff'),
+    url('./fonts/transform/PlayfairDisplay-Regular.ttf') format('truetype'),
+    url('./fonts/transform/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
-
-
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 /* ====================Typography================ */
 html{
     font-size: 14px;
     /* scroll-behavior: smooth; */
 }
-
 body {
     min-width: 350px;
     line-height: 2rem;
@@ -162,16 +145,13 @@ body {
     font-family: "Playfair Display";
     font-weight:bold;
     font-size: 2rem;
-
 }
 .white{
     color: white;
 }
-
 .nav{
     color:#e2574c;
 }
-
 ul .nav:hover{
     color:#b64036;
 }
@@ -184,28 +164,22 @@ ul .nav:hover{
     font-size: 1rem;
     text-transform: uppercase; 
 }
-
 header,
 footer{
-font-family: "Playfair Display"
+    font-family: "Playfair Display"
 }
 ol, ul {
 	list-style: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 .fa{
     display:block;
     color: white;
     text-decoration: none;
-
 }
-
 footer{
     background-color:#242424;
     display: flex;
@@ -214,9 +188,7 @@ footer{
     color: white;
     margin:2rem auto 0 auto;
     border-top: white solid 7px;
-
 }
-
 .contact{
     display: flex;
     justify-content: flex-start;
@@ -228,9 +200,7 @@ footer{
 }
 .address{
     color:#969696;
-   
 }
-
 /* ================== Social media Buttons ================= */
 .social{
     text-align: center;
@@ -238,9 +208,7 @@ footer{
     justify-content: space-evenly;
     width: 100vw;
     margin: 0 0 4rem 0;
-    
 }
-
 .right-ul{
     display: flex;
     flex-direction: row;
@@ -250,41 +218,30 @@ footer{
 .fa:hover{
     color: #b64036;
 }
-
 .media-name{
     display: none;
 }
 /* ====================================== */
-
-
-
 /* =================Blocks================ */
-
 *{
     box-sizing: border-box;
 }
-
 header{
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: center;    
 }
- 
 .menu .nav a{
     text-decoration: none;
     color:inherit;
 }
-
 .ancor{
     display:block;
     position: relative;
     top: -160px;
     visibility: hidden;
-
 }
-
-
 .fixing{
     position: fixed;
     min-width: 350px;
@@ -295,32 +252,24 @@ header{
     background-color: white;
     z-index: 5;
 }
-
-
 .logo{
     order: 1;
     margin: 3% auto 0px 3%;
     width: 47%;
-
 }
-
 .basket{
     order: 2;
     margin: -2% 3% -1% auto;
-
 }
-
 .basket-image{
     height: 65px;
     max-width: auto;
-    
 }
 .logo-image{
     height: 65px; 
     width: auto;
     display: flex; 
 }
-
 .shopping-count{
     color:white;
     font-weight: bold;
@@ -339,8 +288,6 @@ header{
     background-color: #e2574c;
     visibility: hidden;
 }
-
-
 .menu{
     order: 3;
     flex-basis: 100%;
@@ -356,31 +303,23 @@ header{
     justify-content: space-around;
     margin: 0.2rem 2% 0rem 2%;
 }
-
-
 li.nav{
     display: inline-block;
 }
-
-
 .filler{
     background-color: white;
     height:147px;
 }
-
-
 .banner{
     display: flex;
     background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
-                url(images/banner-girl.png) no-repeat center, 
-                url(images/flower-bkgd.jpg) repeat-x center;
-               
+    url(images/banner-girl.png) no-repeat center, 
+    url(images/flower-bkgd.jpg) repeat-x center;
     background-size:cover, 44%, cover;
     width: 100%;
     height: 30rem;
     background-position-y: 0, 53px, 0;
     margin-top: 147px;
-    
 }
 .banner-text{
     display:flex;
@@ -388,17 +327,14 @@ li.nav{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .collection{
     max-width: 100%;
 }
-
 .collection p{
     font-variant: small-caps;
     font-family: "Raleway";
     font-size: 1rem;
     font-weight: 400;
-   
 }
 .collection h1{
     font-family: "Playfair Display";
@@ -406,9 +342,7 @@ li.nav{
     font-size: 2rem;
     padding: 10px 55px;
     line-height: 2rem;
-    
 }
-
 .container{
     margin: 0 auto;
     max-width: 1240px;
@@ -417,7 +351,6 @@ li.nav{
 .wave-block{
     margin: 0 0 -7px 0;
 } 
-
 .container .text{
     margin: 1.5rem 1.5rem;
     padding: 1.5rem 0;
@@ -432,7 +365,6 @@ li.nav{
     color: white;
     padding: 5px;
 }
-
 .categories{
     color: white;
     font-family: "Raleway";
@@ -442,17 +374,13 @@ li.nav{
     flex-wrap: wrap;
     justify-content: center;
     align-content: stretch;
-   
 }
-
 .hvr:hover{
     color: rgba(216, 208, 90, 0.877);
 }
-
 .men{
     background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
-                      url(./images/mens-category.jpg);
-                      
+    url(./images/mens-category.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -460,18 +388,16 @@ li.nav{
     height: 50vw;
     margin-bottom: 1%;
     align-items: center;
- } 
+} 
 .men li{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;  
 }
-
-
 .trends{
     background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
-                        url(./images/trends-category.jpg);
+    url(./images/trends-category.jpg);
     background-position: center;
     background-size:100%;
     background-repeat: no-repeat;
@@ -481,20 +407,16 @@ li.nav{
     border-style: solid;
     border-color: white;
     align-items: center;
-    
 }
-
 .trends li{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;  
 }
-
-
 .glasses{
     background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
-                        url(./images/glasses-category.jpg);
+    url(./images/glasses-category.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -511,11 +433,9 @@ li.nav{
     justify-content: center;
     align-items: center;
 }
-
-
 .sale{
     background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
-                        url(./images/sale-category.jpg);
+    url(./images/sale-category.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -532,11 +452,9 @@ li.nav{
     justify-content: center;
     align-items: center;
 }
-
-
 .bags{
     background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
-                        url(./images/bags-category.jpg);
+    url(./images/bags-category.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -553,18 +471,15 @@ li div{
     justify-content: center;
     align-items: center;
 }
-
 .women{
     background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), 
-                        url(./images/womens-category.jpg);
+    url(./images/womens-category.jpg);
     background-position: center;
     background-size:100%;
     background-repeat: no-repeat;
     flex-basis: 100%;
     height: 50vw;
     margin-top: 3px;
-    
-
 }
 .women li{
     height: 100%;
@@ -572,27 +487,22 @@ li div{
     justify-content: center;
     align-items: center;
 }
-
 .carousel{
     min-width: 350px;
 }
 .add-to-cart{
     background-color: black;
-        border-color: black;
-        border-radius: 25px;
-        font-family: "Raleway";
-        font-size: 0.8rem;
-        color: white;
-        margin: 5px auto 5px auto;
-        height: 2rem;
-        
-        
+    border-color: black;
+    border-radius: 25px;
+    font-family: "Raleway";
+    font-size: 0.8rem;
+    color: white;
+    margin: 5px auto 5px auto;
+    height: 2rem;
 }
-
-
 .wave{
     background-image:   linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
-                        url(./images/wave-bkgd.jpg);
+    url(./images/wave-bkgd.jpg);
     background-position: bottom;
     background-size: 175vh;
     bottom: 20px;
@@ -600,15 +510,12 @@ li div{
     width: 100%;
     height: 25rem;
     margin:3rem 0 auto 0;
-    
 }
- 
 .email-bar{
     display: flex;
     justify-content: center;
     margin: 50px auto auto auto;
 }
-
 form{
     display: flex;
     justify-content: space-between;
@@ -617,9 +524,7 @@ form{
     background-color: white;
     border-radius: 25px;
     text-align: center;
-
 }
-
 .placeholder{
     line-height: 1.5;
     font-family: "Raleway";
@@ -634,7 +539,6 @@ form{
     border-radius: 25px;
     display: flex;
     flex-shrink: 1;
-
 }
 button{
     border-color: #e2574c;
@@ -647,65 +551,48 @@ button{
     height: 3rem;
     padding: 0.5rem 1.5rem;
 }
-
-
-   /* ============================MEDIA QUERY 600px==================== */
-
-
+/* ============================MEDIA QUERY 600px==================== */
 @media screen and (min-width: 600px){
-    
-        html{
-            font-size: 16px;
-        }
-
-        .fixing{
-            min-width:600px;
-            width: 1240px;   
-        }
-
-        .placeholder {
-            font-size: 1rem;
-        }
-
-        .fixing{  
-            min-width: 600px;
-            width: 100%;
-            flex-wrap: nowrap;
-            align-content: space-around;   
-        }
-
-        .logo{
-            order: 1;
-            margin: 2% auto 10px 3%;
-    
-        }
-        
-        .basket{
-            order: 3;
-                margin: -3% 3% -1% 97px;; 
-                
-        }
-        
-        .menu{
-            order: 2;
-            flex-basis: 220%;
-            border-top: none;
-            margin: 1% 2% 0% 2%;
-        
-        }
-        .nav{
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-            margin: 0.2rem 2% 0rem 2%;
-        }
-
-        .banner{
-            margin-top: 100px;
-        }
-
-
-        /* ================= MAIN FLEXBOX ==================== */
+    html{
+        font-size: 16px;
+    }
+    .fixing{
+        min-width:600px;
+        width: 1240px;   
+    }
+    .placeholder {
+        font-size: 1rem;
+    }
+    .fixing{  
+        min-width: 600px;
+        width: 100%;
+        flex-wrap: nowrap;
+        align-content: space-around;   
+    }
+    .logo{
+        order: 1;
+        margin: 2% auto 10px 3%;
+    }
+    .basket{
+        order: 3;
+        margin: -3% 3% -1% 97px;; 
+    }
+    .menu{
+        order: 2;
+        flex-basis: 220%;
+        border-top: none;
+        margin: 1% 2% 0% 2%;
+    }
+    .nav{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        margin: 0.2rem 2% 0rem 2%;
+    }
+    .banner{
+        margin-top: 100px;
+    }
+    /* ================= MAIN FLEXBOX ==================== */
     .men{
         flex-basis: 50%;
         height: 25vw;
@@ -714,7 +601,6 @@ button{
         border-style: solid;
         margin:initial;
     } 
-
     .trends{
         flex-basis: 25%;
         height: 25vw; 
@@ -723,29 +609,22 @@ button{
         border-color: white;
         border-style: solid;
     }
-
     .glasses{
-    
         flex-basis: 25%;
         height: 25vw;
         border-width: 0 0 4px 4px;
         border-color: white;
         border-style: solid;
     }
-
     .sale{
-    
         flex-basis: 25%;
         height: 25vw;
         background-size: cover;
         border-width: 4px 4px 0 0;
         border-color: white;
         border-style: solid;
-
     }
-
     .bags{
-    
         flex-basis: 25%;
         width: 25vw;
         background-size: cover;
@@ -753,7 +632,6 @@ button{
         border-color: white;
         border-style: solid;
     }
-
     .women{
         flex-basis: 50%;
         height: 25vw;
@@ -763,15 +641,12 @@ button{
         border-style: solid;
     }
     /* ====================================================== */
-
     footer{
         flex-direction: row;
         justify-content: space-between;
     }
-
     .contact{
         text-align: left;
-
     }
     .fa{
         display:initial;
@@ -779,95 +654,71 @@ button{
     .right-ul{
         flex-direction: column;
         justify-content: flex-end;
-        
     }
     .media-name{
         display:initial;
         flex-direction:row;
         flex-wrap:wrap;
     }
-
     .social{
         text-align: right;
         justify-content: flex-end;
         margin: 0 3rem 0 auto;
         width: 50%;   
     }
-
-
     .ancor{
         top: -105px;
     }
 }
-
-
 @media screen and (min-width:800px){
     .basket{
         margin: -2% 3% -1% 97px;
     }
-
 }
-
 @media screen and (min-width:1050px){
     .basket{
         margin: -1% 3% -1% 97px;
     }
 }
-
-
 @media screen and (min-width: 1240px) {
-
     .fixing{
         min-width: 1240px;
         padding: 0% 21%;
         margin: 0px;
     }
-
-
     .logo{
         margin:1.5% auto 0% 1%;
     }
-
     .basket{
         margin: -1% 1% 1% auto;
     }
-
     .menu{
         padding: 0% 2% 0% 2%;
         margin: 0% 2% 0% 2%;
     }
-
     .nav{
         margin: 1% 2% 0% 2%;
     }
-
     .products{
         margin:0px auto;
     }
-
     .wave-block{
         margin:0px auto;
     }
-
     .menu-bar{
         padding: 0 20%;
     }
-
     .basket-image{
         margin: 0 0px 0px 110px;
     }
-
     .container{
         min-width: 100%;
     }
-
     .email-bar{
         padding: 0px 20%;
     }
-
     .shopping-count{
         top: 25px;
         left: 155px;
-    
     }
 }
