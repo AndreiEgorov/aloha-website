@@ -54,7 +54,7 @@ $(document).ready(function (){
 
 
 
-$("#submit").on("click", function(event){  //for some reason .on"submit" did not function, so I used .on click to create an alert when submitting email
+$("#subscribe-form").on("submit", function(event){  //for some reason .on"submit" did not function, so I used .on click to create an alert when submitting email
   event.preventDefault;
   if ($("input").val() ===""){
   alert("Please, enter a valid email address");
